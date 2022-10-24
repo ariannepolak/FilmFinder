@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Winc Film Finder</title>
+</head>
+
+<body>
+  
+  <header>
+    <h1>Winc Film Finder</h1>
+  </header>
+  
+  <nav>
+    <div>
+      <input type="radio" name="filter" id="new" value="new" 
+      onchange="handleOnChangeEvent(event)"> 
+      <label for="new">New movies (2014 or newer)</label>
+    </div>
+    <div>
+      <input type="radio" name="filter" id="avengers" value="avengers"
+      onchange="handleOnChangeEvent(event)"> 
+      <label for="avengers">Avengers movies</label>
+    </div>
+    <div>
+      <input type="radio" name="filter" id="xmen" value="xmen"
+      onchange="handleOnChangeEvent(event)"> 
+      <label for="xmen">X-Men movies</label>
+    </div>
+    <div>
+      <input type="radio" name="filter" id="princess" value="princess"
+      onchange="handleOnChangeEvent(event)"> 
+      <label for="princess">Princess movies</label>
+    </div>
+    <div>
+      <input type="radio" name="filter" id="batman" value="batman"
+      onchange="handleOnChangeEvent(event)"> 
+      <label for="batman">Batman movies</label>
+    </div>
+    <div>
+      <input type="radio" name="filter" id="all" value="all" 
+      onchange="handleOnChangeEvent(event)"> 
+      <label for="all">All movies</label>
+    </div>
+  </nav>
+  
+  <main>
+    <ul id="allmovies"></ul>
+  </main>
+    
+<script defer src="./movies.js"></script>
+<script defer src="./script.js"></script>
+
+</body>
+</html>
